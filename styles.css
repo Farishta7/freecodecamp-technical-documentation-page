@@ -1,0 +1,133 @@
+html, body {
+    color: #4d4e53;
+    background-color: #cef1f6;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 10px double rgba(0, 22, 22, 0.4)
+}
+
+#navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    padding: 10px 30px;
+    position: relative;
+}
+
+header {
+    margin: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    color: black;
+    font-style: italic;
+}
+
+nav li:hover {
+    background-color: rgb(143, 186, 197);
+    color: #f7f7f7;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}  
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    display:block;
+
+}
+
+section article {
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    line-height: 2;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+    margin: 0px 20px;
+  }
+
+  #navbar {
+    background-color: #cef1f6;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    /* border: none; */
+    z-index: 1;
+    /* border-bottom: 2px solid; */
+  }
+
+  #navbar ul {
+    background-color: #e4f0f2;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  ul {
+    padding: 0
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
